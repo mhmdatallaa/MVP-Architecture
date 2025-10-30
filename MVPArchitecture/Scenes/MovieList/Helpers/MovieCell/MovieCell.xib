@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="198" id="KGk-i7-Jjw" customClass="MovieCell" customModule="MVPArchitecture" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="198"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="198"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o88-li-79v">
+                        <rect key="frame" x="20" y="20" width="391" height="158"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="52v-dd-VzS">
+                                <rect key="frame" x="0.0" y="0.0" width="105.33333333333333" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="52v-dd-VzS" secondAttribute="height" multiplier="2:3" id="PAx-eP-Def"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sr0-oF-lrK">
+                                <rect key="frame" x="105.33333333333334" y="0.0" width="285.66666666666663" height="158"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="i0p-JH-OHi">
+                                        <rect key="frame" x="0.0" y="0.0" width="285.66666666666669" height="158"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="gwn-Ng-OGM">
+                                                <rect key="frame" x="0.0" y="0.0" width="285.66666666666669" height="52.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ddddddddddd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgP-eQ-Dxe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="110.33333333333333" height="52.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GPO-iK-K0Y">
+                                                        <rect key="frame" x="265" y="1.9999999999999964" width="20.666666666666686" height="49.666666666666657"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qi0-47-aZ4">
+                                                <rect key="frame" x="0.0" y="52.666666666666671" width="285.66666666666669" height="52.666666666666671"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="784" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPe-wa-H1S">
+                                                <rect key="frame" x="0.0" y="105.33333333333333" width="285.66666666666669" height="52.666666666666671"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="o88-li-79v" secondAttribute="trailing" constant="20" id="9gJ-FP-xOr"/>
+                    <constraint firstItem="o88-li-79v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="B9Z-6v-DyL"/>
+                    <constraint firstAttribute="bottom" secondItem="o88-li-79v" secondAttribute="bottom" constant="20" id="I3F-gl-18Q"/>
+                    <constraint firstItem="o88-li-79v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="hPC-NX-GsW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="overviewLabel" destination="ZPe-wa-H1S" id="czT-fO-kRT"/>
+                <outlet property="posterImageView" destination="52v-dd-VzS" id="A2O-NX-sph"/>
+                <outlet property="releaseYearLabel" destination="Qi0-47-aZ4" id="l5m-e2-LfJ"/>
+                <outlet property="titleLabel" destination="DgP-eQ-Dxe" id="UYl-qF-Cbx"/>
+                <outlet property="watchlistImageView" destination="GPO-iK-K0Y" id="Z8N-va-BUc"/>
+            </connections>
+            <point key="canvasLocation" x="-211.4503816793893" y="141.5492957746479"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+    </resources>
+</document>

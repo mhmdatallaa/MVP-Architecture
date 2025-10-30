@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D7D00242EB29782004E429C /* PopularMoviesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D00232EB29782004E429C /* PopularMoviesUseCase.swift */; };
+		6D7D00272EB297B1004E429C /* MoviesResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D00262EB297B1004E429C /* MoviesResponseMapper.swift */; };
+		6DC078C62EB2F86600602832 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC078C52EB2F86600602832 /* BasePresenter.swift */; };
+		6DC078C82EB2F8CE00602832 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC078C72EB2F8CE00602832 /* BaseViewController.swift */; };
+		6DC078CB2EB2FAB200602832 /* UiViewController+activityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC078CA2EB2FAB200602832 /* UiViewController+activityIndicator.swift */; };
+		6DC078CD2EB2FB9F00602832 /* UIViewController+showAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC078CC2EB2FB9F00602832 /* UIViewController+showAlert.swift */; };
+		6DC078D22EB2FFEB00602832 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC078D12EB2FFEB00602832 /* Resources.swift */; };
+		6DC078DB2EB3067A00602832 /* UIImageView+setImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC078DA2EB3067A00602832 /* UIImageView+setImage.swift */; };
+		6DC078FF2EB306E900602832 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC078FE2EB306E900602832 /* Kingfisher */; };
 		6DC9B22F2EA9B26300A54608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC9B2252EA9B26300A54608 /* AppDelegate.swift */; };
 		6DC9B2302EA9B26300A54608 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC9B22C2EA9B26300A54608 /* SceneDelegate.swift */; };
 		6DC9B2312EA9B26300A54608 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC9B22D2EA9B26300A54608 /* ViewController.swift */; };
 		6DC9B2322EA9B26300A54608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC9B2262EA9B26300A54608 /* Assets.xcassets */; };
 		6DC9B2342EA9B26300A54608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC9B2292EA9B26300A54608 /* LaunchScreen.storyboard */; };
-		6DC9B2352EA9B26300A54608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC9B22B2EA9B26300A54608 /* Main.storyboard */; };
 		6DC9B2392EA9B31400A54608 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC9B2382EA9B31400A54608 /* Logger.swift */; };
 		6DC9B23B2EA9B34A00A54608 /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC9B23A2EA9B34A00A54608 /* NetworkingConstants.swift */; };
 		6DC9B2572EA9B3B800A54608 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC9B2562EA9B3B800A54608 /* NetworkError.swift */; };
@@ -43,6 +51,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D7D00232EB29782004E429C /* PopularMoviesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesUseCase.swift; sourceTree = "<group>"; };
+		6D7D00262EB297B1004E429C /* MoviesResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesResponseMapper.swift; sourceTree = "<group>"; };
+		6DC078C52EB2F86600602832 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		6DC078C72EB2F8CE00602832 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6DC078CA2EB2FAB200602832 /* UiViewController+activityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewController+activityIndicator.swift"; sourceTree = "<group>"; };
+		6DC078CC2EB2FB9F00602832 /* UIViewController+showAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+showAlert.swift"; sourceTree = "<group>"; };
+		6DC078D12EB2FFEB00602832 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		6DC078DA2EB3067A00602832 /* UIImageView+setImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+setImage.swift"; sourceTree = "<group>"; };
 		6DC9B1F12EA9B24B00A54608 /* MVPArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC9B2072EA9B24C00A54608 /* MVPArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC9B2112EA9B24C00A54608 /* MVPArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,7 +66,6 @@
 		6DC9B2262EA9B26300A54608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DC9B2272EA9B26300A54608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DC9B2282EA9B26300A54608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6DC9B22A2EA9B26300A54608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DC9B22C2EA9B26300A54608 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6DC9B22D2EA9B26300A54608 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6DC9B2382EA9B31400A54608 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
@@ -66,6 +81,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		6DC078B72EB2F5F800602832 /* Scenes */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		6DC9B20A2EA9B24C00A54608 /* MVPArchitectureTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MVPArchitectureTests;
@@ -83,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DC078FF2EB306E900602832 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,12 +124,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D7D00222EB29758004E429C /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				6D7D00252EB29795004E429C /* Mapper */,
+				6D7D00232EB29782004E429C /* PopularMoviesUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		6D7D00252EB29795004E429C /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				6D7D00262EB297B1004E429C /* MoviesResponseMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		6DC078C32EB2F82D00602832 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6DC078D02EB2FFE200602832 /* Helpers */,
+				6DC078C92EB2FA4E00602832 /* Extensions */,
+				6DC078C42EB2F85100602832 /* BaseWireframe */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6DC078C42EB2F85100602832 /* BaseWireframe */ = {
+			isa = PBXGroup;
+			children = (
+				6DC078C52EB2F86600602832 /* BasePresenter.swift */,
+				6DC078C72EB2F8CE00602832 /* BaseViewController.swift */,
+			);
+			path = BaseWireframe;
+			sourceTree = "<group>";
+		};
+		6DC078C92EB2FA4E00602832 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6DC078CA2EB2FAB200602832 /* UiViewController+activityIndicator.swift */,
+				6DC078CC2EB2FB9F00602832 /* UIViewController+showAlert.swift */,
+				6DC078DA2EB3067A00602832 /* UIImageView+setImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6DC078D02EB2FFE200602832 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6DC078D12EB2FFEB00602832 /* Resources.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6DC078FD2EB306E900602832 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6DC9B1E82EA9B24B00A54608 = {
 			isa = PBXGroup;
 			children = (
 				6DC9B22E2EA9B26300A54608 /* MVPArchitecture */,
 				6DC9B20A2EA9B24C00A54608 /* MVPArchitectureTests */,
 				6DC9B2142EA9B24C00A54608 /* MVPArchitectureUITests */,
+				6DC078FD2EB306E900602832 /* Frameworks */,
 				6DC9B1F22EA9B24B00A54608 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,15 +209,17 @@
 		6DC9B22E2EA9B26300A54608 /* MVPArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				6DC078C32EB2F82D00602832 /* Common */,
+				6D7D00222EB29758004E429C /* UseCases */,
 				6DC9B2372EA9B27200A54608 /* Networking */,
 				6DC9B2362EA9B26C00A54608 /* Logger */,
 				6DC9B2252EA9B26300A54608 /* AppDelegate.swift */,
 				6DC9B2262EA9B26300A54608 /* Assets.xcassets */,
 				6DC9B2272EA9B26300A54608 /* Info.plist */,
 				6DC9B2292EA9B26300A54608 /* LaunchScreen.storyboard */,
-				6DC9B22B2EA9B26300A54608 /* Main.storyboard */,
 				6DC9B22C2EA9B26300A54608 /* SceneDelegate.swift */,
 				6DC9B22D2EA9B26300A54608 /* ViewController.swift */,
+				6DC078B72EB2F5F800602832 /* Scenes */,
 			);
 			path = MVPArchitecture;
 			sourceTree = "<group>";
@@ -234,8 +319,12 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				6DC078B72EB2F5F800602832 /* Scenes */,
+			);
 			name = MVPArchitecture;
 			packageProductDependencies = (
+				6DC078FE2EB306E900602832 /* Kingfisher */,
 			);
 			productName = MVPArchitecture;
 			productReference = 6DC9B1F12EA9B24B00A54608 /* MVPArchitecture.app */;
@@ -320,6 +409,9 @@
 			);
 			mainGroup = 6DC9B1E82EA9B24B00A54608;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6DC078DC2EB3069700602832 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6DC9B1F22EA9B24B00A54608 /* Products */;
 			projectDirPath = "";
@@ -339,7 +431,6 @@
 			files = (
 				6DC9B2322EA9B26300A54608 /* Assets.xcassets in Resources */,
 				6DC9B2342EA9B26300A54608 /* LaunchScreen.storyboard in Resources */,
-				6DC9B2352EA9B26300A54608 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,17 +455,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DC078C62EB2F86600602832 /* BasePresenter.swift in Sources */,
 				6DC9B22F2EA9B26300A54608 /* AppDelegate.swift in Sources */,
 				6DC9B25F2EA9BC1D00A54608 /* HTTPClient.swift in Sources */,
+				6DC078C82EB2F8CE00602832 /* BaseViewController.swift in Sources */,
 				6DC9B23B2EA9B34A00A54608 /* NetworkingConstants.swift in Sources */,
 				6DC9B2592EA9B3E700A54608 /* HTTPMethod.swift in Sources */,
+				6D7D00242EB29782004E429C /* PopularMoviesUseCase.swift in Sources */,
 				6DC9B25B2EA9B53D00A54608 /* NetworkingRequest.swift in Sources */,
 				6DDC0A8D2EAE999500D504EF /* MoviesResponse.swift in Sources */,
+				6DC078CD2EB2FB9F00602832 /* UIViewController+showAlert.swift in Sources */,
+				6D7D00272EB297B1004E429C /* MoviesResponseMapper.swift in Sources */,
+				6DC078D22EB2FFEB00602832 /* Resources.swift in Sources */,
 				6DC9B2302EA9B26300A54608 /* SceneDelegate.swift in Sources */,
 				6DC9B2312EA9B26300A54608 /* ViewController.swift in Sources */,
 				6DDC0A922EAE9B2400D504EF /* PopularMoviesService.swift in Sources */,
 				6DDC0A8F2EAE9A1300D504EF /* PopularMoviesRequest.swift in Sources */,
+				6DC078DB2EB3067A00602832 /* UIImageView+setImage.swift in Sources */,
 				6DC9B2572EA9B3B800A54608 /* NetworkError.swift in Sources */,
+				6DC078CB2EB2FAB200602832 /* UiViewController+activityIndicator.swift in Sources */,
 				6DC9B2392EA9B31400A54608 /* Logger.swift in Sources */,
 				6DC9B2C32EAD450400A54608 /* URLSessionClient.swift in Sources */,
 			);
@@ -416,14 +515,6 @@
 				6DC9B2282EA9B26300A54608 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		6DC9B22B2EA9B26300A54608 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6DC9B22A2EA9B26300A54608 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -741,6 +832,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6DC078DC2EB3069700602832 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6DC078FE2EB306E900602832 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DC078DC2EB3069700602832 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6DC9B1E92EA9B24B00A54608 /* Project object */;
 }

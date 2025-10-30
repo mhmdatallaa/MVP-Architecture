@@ -12,11 +12,11 @@ protocol URLSessionProtocol {
 }
 
 final class URLSessionClient: HTTPClient {
-    private let session: URLSessionProtocol
+    private var session: URLSessionProtocol = URLSession.shared
     
     init(session: URLSessionProtocol, configuration: URLSessionConfiguration? = nil) {
         guard let configuration else {
-            self.session = URLSession.shared
+            self.session = session
             return
         }
         self.session = URLSession(configuration: configuration)
