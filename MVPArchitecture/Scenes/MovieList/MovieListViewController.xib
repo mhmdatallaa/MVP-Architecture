@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieListViewController" customModule="MVPArchitecture" customModuleProvider="target">
             <connections>
+                <outlet property="searchBar" destination="Xp3-TY-x5F" id="HwN-mn-LlD"/>
+                <outlet property="tableView" destination="Ugf-eg-bkk" id="F7T-O9-CEz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

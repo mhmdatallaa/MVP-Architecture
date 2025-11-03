@@ -8,7 +8,7 @@
 import UIKit
 
 class MovieCell: UITableViewCell {
-    static var height: CGFloat = 250
+    static var height: CGFloat = 150
     
     // MARK: - Outlets
     @IBOutlet private weak var titleLabel: UILabel!

@@ -16,10 +16,10 @@ final class PopularMoviesUseCase {
         self.moviesResponseMapper = moviesResponseMapper
     }
     
-    func fetchMovies(at page: Int) async throws -> [Movie] {
+    func fetchMovies(at page: Int) async throws -> (totalPages: Int, movies: [Movie]) {
         let response = try await networkService.fetchPopularMovies(at: page)
         let movies = moviesResponseMapper.mapResponseToMovies(response)
         
-        return movies
+        return (response.totalPages, movies)
     }
 }
