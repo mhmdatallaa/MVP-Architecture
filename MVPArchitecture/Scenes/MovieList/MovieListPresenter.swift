@@ -62,10 +62,7 @@ final class MovieListPresenter: BasePresenter<MovieListView> {
         view.startLoading()
         do {
             let (totalPages, movies) = try await searchMoviesUseCase.fetchMovies(by: query, at: page)
-            self.totalPage = totalPages
-            self.movies = movies
-            view.showMovies()
-            view.stopLoading()
+            handleMoviesResponse(totalPages: totalPages, movies: movies)
         } catch {
             Logger.shared.log(error.localizedDescription, level: .error)
             view.showError(with: "\(type(of: error))", and: error.localizedDescription)
@@ -90,14 +87,19 @@ private extension MovieListPresenter {
         view.startLoading()
         do {
            let (totalPages, resultMovies) = try await popularMoviesUseCase.fetchMovies(at: page)
-            movies += resultMovies
-            totalPage = totalPages
-            view.showMovies()
-            view.stopLoading()
+            handleMoviesResponse(totalPages: totalPages, movies: resultMovies)
+
         } catch {
             Logger.shared.log(error.localizedDescription, level: .error)
             view.showError(with: "\(type(of: error))", and: error.localizedDescription)
         }
+    }
+    
+    func handleMoviesResponse(totalPages: Int, movies: [Movie]) {
+        self.movies += movies
+        self.totalPage = totalPages
+        view.showMovies()
+        view.stopLoading()
     }
     
     func switchToPopularMoviesState() {
