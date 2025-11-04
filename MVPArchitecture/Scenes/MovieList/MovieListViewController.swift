@@ -53,5 +53,6 @@ private extension MovieListViewController {
     
     func setupSearchBar() {
         searchBar.delegate = searchBarDelegate
+        searchBar.placeholder = "Search movie"
     }
 }
